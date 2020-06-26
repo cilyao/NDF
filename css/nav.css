@@ -1,6 +1,6 @@
 
   /* PC・ナビ */
-header{
+  header{
     box-shadow: 2px 2px 8px 7px #DFDFDF;
 }
 
@@ -118,7 +118,7 @@ header{
     max-width: 330px;/*最大幅（調整してください）*/
     height: 100%;
     background: #fff;/*背景色*/
-    transition: .3s ease-in-out;/*滑らかに表示*/
+    transition: .5s ease-in-out;/*滑らかに表示*/
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);/*左に隠しておく*/
   }
@@ -178,11 +178,12 @@ header{
   }
   
   #nav-content a{
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     color: #626262;
     font-size: 20px;
-    border-bottom: solid 2px rgba(0,0,0,0);
-    padding-bottom: 16px;
+    width: 100%;
   }
   #nav-content a:hover{
     color: white;
@@ -192,7 +193,11 @@ header{
   #nav-open{
     display: none;
   }
-  
+.sp-nav-close{
+    cursor: pointer;
+}
+
+
   /* NDF.非表示 */
   @media screen and (max-width: 1021px){
       .pc-nav small{
