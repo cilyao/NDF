@@ -1,0 +1,242 @@
+
+  /* PC・ナビ */
+header{
+    box-shadow: 2px 2px 8px 7px #DFDFDF;
+}
+
+  .pc-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+  }
+  .pc-nav ul{
+    list-style:none;
+    width: 75%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pc-nav a{
+    font-size: 120%;
+  }
+  .pc-nav a,
+  .phone-nav a{
+    text-decoration: none;
+    color: white;
+    border-bottom: solid 0.5px rgba(0 0 0 0);
+    padding-bottom: 15px;
+    opacity: 0.8;
+  }
+  .pc-nav a:hover,
+  .phone-nav a:hover{
+    opacity: 1;
+    border-bottom: solid 2px white;
+  }
+  
+  .pc-nav h2,
+  .phone-nav h2{
+    color: white;
+    margin: 10px 0;
+  }  /* .pc-nav h2:hover,
+  .phone-nav h2:hover{
+    opacity: 0.8;
+  } */
+#nav-open{
+  margin: 0;
+  padding: 20px 0 40px 10px;
+}
+  
+  
+  /*ヘッダーまわりはサイトに合わせて調整してください*/
+  header {
+    background: #58A9EF;
+  }
+  
+  #nav-drawer {
+    position: relative;
+  }
+  
+  /*チェックボックス等は非表示に*/
+  .nav-unshown {
+    display:none;
+  }
+  
+  /*アイコンのスペース*/
+  #nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: bottom;
+  
+  }
+  
+  /*ハンバーガーアイコンをCSSだけで表現*/
+  #nav-open span,
+  #nav-open span:before,
+  #nav-open span:after {
+    position: absolute;
+    height: 2px;/*線の太さ*/
+    width: 30px;/*長さ*/
+    border-radius: 3px;
+    background: white;
+    display: block;
+    content: '';
+    cursor: pointer;
+  }
+  #nav-open span:before {
+    bottom: -10px;
+  }
+  #nav-open span:after {
+    bottom: -20px;
+  }
+  
+  /*閉じる用の薄黒カバー*/
+  #nav-close {
+    display: none;/*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0;/*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 1;
+    transition: .3s ease-in-out;
+  }
+  
+  /*中身*/
+  #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;/*最前面に*/
+    width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+    max-width: 330px;/*最大幅（調整してください）*/
+    height: 100%;
+    background: #fff;/*背景色*/
+    transition: .3s ease-in-out;/*滑らかに表示*/
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);/*左に隠しておく*/
+  }
+  
+  /*チェックが入ったらもろもろ表示*/
+
+  #nav-input:checked ~ #nav-close {
+    display: block;/*カバーを表示*/
+    opacity: .5;
+  }
+  
+  #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);/*中身を表示（右へスライド）*/
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+  }
+  .sm-nav-flex{
+    background-color: #58A9EF;
+    height: auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #nav-content p{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+/*    padding: 10px 0;
+*/    margin: 0;
+  }
+
+  .sm-nav-menu small{
+    color: white;
+    font-size: 8px;
+  }
+  #nav-content ul{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    list-style: none;
+  }
+  
+  #nav-content li{
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    text-align: center;
+    line-height: 150px;
+    
+  }
+  #nav-content li:hover{
+    background: #58A9EF;
+  }
+  
+  #nav-content a{
+    text-decoration: none;
+    color: #626262;
+    font-size: 20px;
+    border-bottom: solid 2px rgba(0,0,0,0);
+    padding-bottom: 16px;
+  }
+  #nav-content a:hover{
+    color: white;
+    font-size: 20px;
+  }
+  
+  #nav-open{
+    display: none;
+  }
+  
+  /* NDF.非表示 */
+  @media screen and (max-width: 1021px){
+      .pc-nav small{
+          font-size: 10%!important;
+      }
+      .pc-nav h2{
+        font-size: 100%;
+        margin: 10px 0 10px 10px;
+        width: 10%;
+      }
+      .pc-nav ul{
+          width: 90%;
+          height: 48px;
+          padding: 3px 0;
+      }
+      .pc-nav a{
+        font-size: 100%;
+      }
+      #home-a h1{
+        font-size: 180%!important;
+      }
+  }
+/* PC・ナビ、ヘッダー非表示 */
+  @media screen and (max-width: 740px){
+      .pc-nav{
+          display: none;
+      }
+  }
+  /* 三　非表示 */
+  #nav-open{
+    display: none;
+  }
+  /* 三　表示 */
+  @media screen and (max-width: 740px){
+    #nav-open{
+        display: block;
+    } 
+    header{
+        height: auto;
+    }
+  }
+
+@media screen and (max-width: 910px){
+  .pc-nav small{
+    margin: 0;
+  }
+}

@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin:0;
+	font-family: 'M PLUS Rounded 1c','M PLUS Rounded 1c','Kosugi Maru';
+}
+p{
+	font-size: 18px;
+}
+body{
+	margin: 0;
+}
+h3{
+	font-size: 200%;
+	font-weight: 800;
+	line-height: 30px;
+	color: #484848;
+	margin: 10px;
+}
+small{
+	margin: 10px;
+}
+.button-typeA a{
+	color: white;
+	border: solid 1px rgba(0 0 0 0);
+	text-decoration: none;
+	border-radius: 17px;
+	padding: 10px 20px;
+	background-color: #58A9EF;
+	line-height: 70px;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+.button-typeA a:hover{
+	text-decoration: none;
+	color: white;
+	background-color: #FF6346;
+	    text-transform: uppercase;
+    letter-spacing: .025em;
+    transition: all .15s ease;
+}
+
+.tittle h1 {
+    margin: 30px 20px;
+}
