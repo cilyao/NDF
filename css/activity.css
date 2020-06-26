@@ -1,0 +1,135 @@
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+small{
+	margin: 0;
+	padding: 0;
+}
+
+.Box{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: center;
+	margin: 5% 10%;
+}
+.Box hr{
+	border: 0.5px solid #DEE0E3;
+	width: 100%;
+}
+
+/*一つ目の取り組み*/
+.mini-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+}
+.left{
+	position: relative;
+	border: 1px solid #DEE0E3;
+	height: 200px;
+}
+img{
+	width: 250px;
+	height: 195px;
+	object-fit: cover;
+	object-position: 100% 0;
+}
+.title{
+	position: absolute;
+	width: 100%;
+	padding: 0 15px;
+	bottom: 0;
+
+	background: white;
+	text-align: center;
+	border-top: 1px solid #DEE0E3;
+	height: 25%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.title:hover{
+	background: #E8F0FE;
+}
+
+.text-box{
+	width: auto;
+	margin-left: 10%;
+}
+
+.text{
+	margin: 0 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.icon{
+	width: 16px;
+	height: 16px;
+}
+button{
+	background-color: #58A9EF;
+	border: 1px solid #58A9EF;
+	padding: 10px 40px;
+	border-radius: 20px;
+}
+button a{
+	text-decoration: none;
+	color: white;
+}
+button:hover{
+	background-color: white;
+}
+button:hover > .button-a{
+	color: blue;
+}
+
+/*スマホ*/
+@media screen and (max-width: 740px){
+	.mini-box{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.left{
+		text-align: center;
+		background-color: #F5F5F5;
+	}
+	.left img{
+		object-fit: cover;
+		width: auto;
+
+	}
+	.text-box{
+		margin-left: 0;
+	}
+	.text{
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
