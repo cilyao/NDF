@@ -32,7 +32,7 @@ small{
 	border: 1px solid #DEE0E3;
 	height: 200px;
 }
-img{
+.left img{
 	width: 250px;
 	height: 195px;
 	object-fit: cover;
@@ -118,18 +118,3 @@ button:hover > .button-a{
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
