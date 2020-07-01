@@ -70,7 +70,6 @@
     width: 30px;
     height: 30px;
     vertical-align: bottom;
-  
   }
   
   /*ハンバーガーアイコンをCSSだけで表現*/
@@ -104,7 +103,7 @@
     height: 100%;
     background: black;
     opacity: 1;
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
   }
   
   /*中身*/
@@ -118,7 +117,7 @@
     max-width: 330px;/*最大幅（調整してください）*/
     height: 100%;
     background: #fff;/*背景色*/
-    transition: .5s ease-in-out;/*滑らかに表示*/
+    transition: .2s ease-in-out;/*滑らかに表示*/
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);/*左に隠しておく*/
   }
@@ -127,7 +126,7 @@
 
   #nav-input:checked ~ #nav-close {
     display: block;/*カバーを表示*/
-    opacity: .5;
+    opacity: .2;
   }
   
   #nav-input:checked ~ #nav-content {
