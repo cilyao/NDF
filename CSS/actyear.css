@@ -1,0 +1,36 @@
+.Act_Year_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 1em;
+    padding: 0 auto;
+}
+
+.Act_Year_flex a {
+    text-decoration: none;
+    color: black;
+    background-color: #E5EF58;
+    padding: 8px 13px;
+    /* iPhone5に合わせました */
+    margin: 0.3em;
+}
+
+.Act_Year_flex a:hover {
+    opacity: 0.6;
+}
+
+.Act_Year_flex li {
+    list-style: none;
+}
+
+@media screen and (max-width: 736px) {
+    .Act_Year_flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 1em;
+        padding: 0 auto;
+    }
+}
