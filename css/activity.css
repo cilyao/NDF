@@ -2,7 +2,6 @@
     box-sizing: border-box;
     outline: none;
 }
-
 small {
     margin: 0;
     padding: 0;
@@ -16,7 +15,6 @@ small {
     align-content: center;
     margin: 5% 10%;
 }
-
 .Box hr {
     border: 0.5px solid #DEE0E3;
     width: 100%;
